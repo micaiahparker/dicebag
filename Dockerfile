@@ -1,5 +1,5 @@
 FROM python:3.6
-ADD ./dicebag
+ADD . /dicebag
 WORKDIR /dicebag
 EXPOSE 5000
 RUN pip install -r requirements.txt
