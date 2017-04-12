@@ -1,0 +1,8 @@
+web:
+  build: .
+  container_name: dicebag
+  ports:
+    - "5000:5000"
+  volumes:
+    - .:/dicebag
+  
