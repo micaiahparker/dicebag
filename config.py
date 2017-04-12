@@ -1,3 +1,8 @@
+import os
+import dotenv
+
+dotenv.load_dotenv(dotenv.find_dotenv())
+
 class Config:
-    DEBUG=False
-    SECRET_KEY='iV4xB4UZpvYVChIXxDP2UeHm0Z8AOEs4PVnXD_dZcr0'
+    DEBUG=os.environ.get('FLASK_DEBUG')
+    SECRET_KEY=os.environ.get('SECRET_KEY')

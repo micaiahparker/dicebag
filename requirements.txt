@@ -7,4 +7,5 @@ MarkupSafe==1.0
 pony==0.7.1
 py==1.4.33
 pytest==3.0.7
+python-dotenv==0.6.4
 Werkzeug==0.12.1
