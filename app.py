@@ -5,7 +5,7 @@ app.config.from_object('config.Config')
 
 @app.route('/')
 def index():
-    return jsonify({'msg': 'Hello!'})
+    return render_template('index.html')
 
 if __name__ == "__main__":
     app.run()
